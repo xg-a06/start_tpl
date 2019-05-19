@@ -5,7 +5,9 @@ const chalk = require('chalk')
 const figlet = require('figlet')
 const { version } = require('../package.json')
 const CONST = require('../lib/const')
-const prommpt = require('../lib/prompt')
+const App = require('../lib/app')
+
+const app = new App()
 
 console.log(chalk.green(figlet.textSync('A06-TPL', {})))
 
@@ -15,28 +17,22 @@ program
   .command('spa [project-name]')
   .description(chalk.green('create a spa project'))
   .action(projectName => {
-    const ctx = {
-      projectType: CONST.SPA,
-      projectName: projectName
-    }
-    prommpt(ctx)
+    const ctx = { projectType: CONST.SPA, projectName: projectName }
+    app.init(ctx)
   })
 program
   .command('lib [project-name]')
   .description(chalk.green('create a lib project'))
   .action(projectName => {
     const ctx = { projectType: CONST.LIBRARY, projectName: projectName }
-    prommpt(ctx)
+    app.init(ctx)
   })
 program
   .command('mpa [project-name]')
   .description(chalk.green('create a mpa project'))
   .action(projectName => {
-    const ctx = {
-      projectType: CONST.MPA,
-      projectName: projectName
-    }
-    prommpt(ctx)
+    const ctx = { projectType: CONST.MPA, projectName: projectName }
+    app.init(ctx)
   })
 program.on('--help', function() {
   console.log('')
@@ -46,22 +42,3 @@ program.on('--help', function() {
   console.log(chalk.green('  a06-tpl ') + ' mpa xxx')
 })
 program.parse(process.argv)
-
-// const inquirer = require('inquirer')
-// inquirer
-//   .prompt([
-//     {
-//       name: 'projectName',
-//       message: '请输入项目名称'
-//     },
-//     {
-//       when: function(result) {
-//         return result.projectName === '1'
-//       },
-//       name: 'good111',
-//       message: 'Sweet! Was it any good?'
-//     }
-//   ])
-//   .then(result => {
-//     console.log(result)
-//   })
