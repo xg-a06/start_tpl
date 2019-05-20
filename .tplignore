@@ -1,0 +1,13 @@
+<% if(!vuex){ %>
+src\store\index.js
+<%}%>
+<% if(!vueRouter){ %>
+src\routes\index.js
+src\routes\routes.js
+src\views\test1.vue
+src\views\test2.vue
+<%}%>
+<% if(!esLint){ %>
+.eslintignore
+.eslintrc.js
+<%}%>
