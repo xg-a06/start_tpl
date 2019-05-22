@@ -5,9 +5,15 @@
   "bin": {
     "a06-tpl": "./bin/tpl.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xg-a06/start_tpl.git"
   },
+  "keywords": [
+    "node-cli",
+    "javascript",
+    "static resource server"
+  ],
   "author": "xg_jser@163.com",
   "license": "MIT",
   "dependencies": {
