@@ -1,7 +1,7 @@
 {
   "name": "a06-tpl",
   "version": "1.0.0",
-  "description": "Quick start project template,like spa、mpa、lib",
+  "description": "Quick start your project template,like spa、jslib",
   "bin": {
     "a06-tpl": "./bin/tpl.js"
   },

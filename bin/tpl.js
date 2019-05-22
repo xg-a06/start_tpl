@@ -39,6 +39,6 @@ program.on('--help', function() {
   console.log('Examples:')
   console.log(chalk.green('  a06-tpl ') + ' spa xxx')
   console.log(chalk.green('  a06-tpl ') + ' lib xxx')
-  console.log(chalk.green('  a06-tpl ') + ' mpa xxx')
+  // console.log(chalk.green('  a06-tpl ') + ' mpa xxx')
 })
 program.parse(process.argv)
