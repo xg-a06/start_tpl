@@ -1,6 +1,6 @@
 {
   "name": "a06-tpl",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Quick start your project template,like spa、jslib",
   "bin": {
     "a06-tpl": "./bin/tpl.js"
@@ -13,11 +13,13 @@
     "node-cli",
     "javascript",
     "vue tpl",
+    "react tpl",
     "jslib tpl"
   ],
   "author": "xg_jser@163.com",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "download-git-repo": "^1.1.0",
     "ejs": "^2.6.1",
