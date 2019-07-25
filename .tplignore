@@ -1,7 +1,7 @@
-<% if(projectType==='spa'&&!vuex){ %>
+<% if(projectType==='spa'&&framework==='vue'&&!vuex){ %>
 src\store\index.js
 <%}%>
-<% if(projectType==='spa'&&!vueRouter){ %>
+<% if(projectType==='spa'&&framework==='vue'&&!vueRouter){ %>
 src\routes\index.js
 src\routes\routes.js
 src\views\test1.vue
