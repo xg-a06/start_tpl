@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+// 测试mac
 const program = require('commander')
 const chalk = require('chalk')
 const figlet = require('figlet')
